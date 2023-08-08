@@ -1,1 +1,153 @@
-ls_pwd_cd. 
+// command ls
+
+The `ls` command in Linux is used to list the contents of a directory. It is one of the most basic and essential commands in Linux, and it can be used to list files and directories in the current directory, as well as in other directories.
+
+The basic syntax for the `ls` command is:
+
+```
+ls [options] [directory]
+```
+
+The `options` are optional, and they can be used to control the output of the `ls` command. Some common options include:
+
+* `-l`: This option lists the files and directories in long format, which includes information about the file permissions, owner, group, size, and last modified date.
+* `-a`: This option lists all files, including hidden files.
+* `-r`: This option lists the files and directories in reverse order.
+* `-t`: This option lists the files and directories in time order, with the most recently modified files listed first.
+
+The `directory` is the name of the directory that you want to list. If you do not specify a directory, the `ls` command will list the contents of the current directory.
+
+For example, to list the contents of the current directory in long format, you would use the following command:
+
+```
+ls -l
+```
+
+This would output the following information for each file and directory in the current directory:
+
+```
+-rw-r--r-- 1 user group 1000 Mar 8 11:12 file.txt
+drwxr-xr-x 2 user group 4096 Mar 8 11:13 directory
+```
+
+The first column shows the file permissions. The second column shows the owner of the file. The third column shows the group of the file. The fourth column shows the size of the file in bytes. The fifth column shows the date and time that the file was last modified.
+
+The `ls` command is a very versatile command, and it can be used to do a lot more than just list the contents of a directory. For more information on the `ls` command, you can consult the man page by typing the following command:
+
+```
+man ls
+```
+
+// command pwd
+
+The `pwd` command in Linux stands for "Print Working Directory". It is used to print the current working directory to the terminal. The current working directory is the directory that you are currently in. It is the directory from which you are running commands.
+
+The basic syntax for the `pwd` command is:
+
+```
+pwd
+```
+
+This will simply print the current working directory to the terminal.
+
+For example, if you are currently in the `/home/user` directory, the `pwd` command will output the following:
+
+```
+/home/user
+```
+
+The `pwd` command can also be used with the `-L` and `-P` flags. The `-L` flag will print the logical path of the current working directory, which includes symbolic links. The `-P` flag will print the physical path of the current working directory, which does not include symbolic links.
+
+For example, if you are currently in a directory that contains a symbolic link to another directory, the `pwd -L` command will output the path of the symbolic link, while the `pwd -P` command will output the path of the actual directory.
+
+The `pwd` command is a very useful command for keeping track of your current location in the file system. It can also be used to pass the current working directory to other commands. For example, you could use the `pwd` command to set the working directory for a script.
+
+Here are some examples of how to use the `pwd` command:
+
+* To print the current working directory:
+
+```
+pwd
+```
+
+* To print the logical path of the current working directory:
+
+```
+pwd -L
+```
+
+* To print the physical path of the current working directory:
+
+```
+pwd -P
+```
+
+* To set the working directory for a script:
+
+```
+#!/bin/bash
+
+pwd
+```
+
+This script will print the current working directory to the terminal.
+
+I hope this helps! Let me know if you have any other questions.
+
+//  command cd 
+
+The `cd` command in Linux stands for "Change Directory". It is used to change the current working directory. The current working directory is the directory that you are currently in. It is the directory from which you are running commands.
+
+The basic syntax for the `cd` command is:
+
+```
+cd [directory]
+```
+
+The `directory` is the name of the directory that you want to change to. If you do not specify a directory, the `cd` command will change to your home directory.
+
+For example, to change to the `/etc` directory, you would use the following command:
+
+```
+cd /etc
+```
+
+This would change the current working directory to the `/etc` directory.
+
+The `cd` command can also be used with relative paths. A relative path is a path that is relative to the current working directory. For example, to change to the `bin` directory, which is one level down from the current working directory, you would use the following command:
+
+```
+cd bin
+```
+
+This would change the current working directory to the `bin` directory.
+
+The `cd` command is a very useful command for navigating the file system. It can be used to quickly change to different directories.
+
+Here are some examples of how to use the `cd` command:
+
+* To change to the home directory:
+
+```
+cd
+```
+
+* To change to the `/etc` directory:
+
+```
+cd /etc
+```
+
+* To change to the `bin` directory:
+
+```
+cd bin
+```
+
+* To change to the parent directory of the current working directory:
+
+```
+cd ..
+```
+
+I hope this helps! Let me know if you have any other questions.
